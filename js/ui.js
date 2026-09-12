@@ -63,18 +63,13 @@ export function renderRepositories(repos, containerId = 'repos-container') {
           </div>
 
           <div>
-            ${
-              repo.homepage
-                ? `<a href="${repo.homepage}" target="_blank" rel="noopener noreferrer" class="repo-demo-link">
-                    <span>Live Demo</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                      <polyline points="15 3 21 3 21 9"></polyline>
-                      <line x1="10" y1="14" x2="21" y2="3"></line>
-                    </svg>
-                  </a>`
-                : `<span style="color: var(--slate-600); font-family: var(--font-mono); font-size: 0.6875rem;">${repo.updatedAt}</span>`
-            }
+            <span style="color: var(--slate-500); font-family: var(--font-mono); font-size: 0.6875rem; display: inline-flex; align-items: center; gap: 4px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Updated ${repo.updatedAt}</span>
+            </span>
           </div>
         </div>
       </article>

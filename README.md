@@ -52,15 +52,15 @@
 ---
 
 <a id="featured-systems"></a>
-### Featured Systems & Live Applications
+### Featured Systems & Core Repositories
 
-| Project | Domain / Tech | Description | Status / Demo |
+| Project | Domain / Tech | Description | Repository |
 | :--- | :--- | :--- | :--- |
-| **[DEPI Face Recognition](https://github.com/Mahmoud-Walid1/DEPI-face-recognition-project)** | `Python` &bull; `OpenCV` &bull; `ML` | Machine learning face detection & identification system for Digital Egypt Pioneers Initiative. | ![Star](https://img.shields.io/badge/Stars-1-f59e0b?style=flat-square) |
-| **[InterActive Lessons](https://github.com/Mahmoud-Walid1/InterActive_lessons-test)** | `React` &bull; `Python` &bull; `Vercel` | High-engagement interactive learning platform with real-time feedback loops. | [Live Demo](https://inter-active-lessons-test.vercel.app) |
-| **[Tikka Plate Platform](https://github.com/Mahmoud-Walid1/Tikka_plate)** | `JavaScript` &bull; `HTML/CSS` | Responsive food ordering and menu management client portal. | [Live Demo](https://tikka-plate.vercel.app) |
-| **[Tikka Plate Admin](https://github.com/Mahmoud-Walid1/Tikka_plate_admin)** | `JavaScript` &bull; `Admin UI` | Administrative operations panel with inventory and order tracking workflows. | [Live Demo](https://tikka-plate-admin.vercel.app) |
-| **[Graduation Landing Page](https://github.com/Mahmoud-Walid1/Graduation-landing-page)** | `CSS3` &bull; `Animation` | High-impact showcase landing page featuring fluid kinetic transitions. | [Live Demo](https://graduation-landing-page-three.vercel.app) |
+| **[DEPI Face Recognition](https://github.com/Mahmoud-Walid1/DEPI-face-recognition-project)** | `Python` &bull; `OpenCV` &bull; `ML` | Machine learning face detection & identification system for Digital Egypt Pioneers Initiative. | [View Repo](https://github.com/Mahmoud-Walid1/DEPI-face-recognition-project) |
+| **[InterActive Lessons](https://github.com/Mahmoud-Walid1/InterActive_lessons-test)** | `React` &bull; `Python` &bull; `CSS` | High-engagement interactive learning platform with real-time feedback loops. | [View Repo](https://github.com/Mahmoud-Walid1/InterActive_lessons-test) |
+| **[Tikka Plate Platform](https://github.com/Mahmoud-Walid1/Tikka_plate)** | `JavaScript` &bull; `HTML/CSS` | Responsive food ordering and menu management client portal. | [View Repo](https://github.com/Mahmoud-Walid1/Tikka_plate) |
+| **[Tikka Plate Admin](https://github.com/Mahmoud-Walid1/Tikka_plate_admin)** | `JavaScript` &bull; `Admin UI` | Administrative operations panel with inventory and order tracking workflows. | [View Repo](https://github.com/Mahmoud-Walid1/Tikka_plate_admin) |
+| **[Graduation Landing Page](https://github.com/Mahmoud-Walid1/Graduation-landing-page)** | `CSS3` &bull; `Animation` | High-impact showcase landing page featuring fluid kinetic transitions. | [View Repo](https://github.com/Mahmoud-Walid1/Graduation-landing-page) |
 
 ---
 

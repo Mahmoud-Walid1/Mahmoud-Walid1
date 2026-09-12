@@ -5,6 +5,8 @@
 
 import { initParticlesCanvas } from './particles.js';
 import { initCyberTerminal } from './terminal.js';
+import { initTicTacToe } from './tictactoe.js';
+import { initSnakeGame } from './snake.js';
 import { initArcadeGame } from './game.js';
 import { fetchUserRepositories } from './github.js';
 import { renderRepositories, renderSkeletons, debounce } from './ui.js';
@@ -59,9 +61,7 @@ function applyFilters() {
   let filtered = [...allRepositories];
 
   // 1. Language / Category Filter
-  if (activeFilter === 'Demos Only') {
-    filtered = filtered.filter((r) => Boolean(r.homepage));
-  } else if (activeFilter === 'HTML/CSS') {
+  if (activeFilter === 'HTML/CSS') {
     filtered = filtered.filter((r) => r.language === 'HTML' || r.language === 'CSS');
   } else if (activeFilter !== 'All') {
     filtered = filtered.filter((r) => r.language === activeFilter);
@@ -140,11 +140,31 @@ function renderSkillsMatrix() {
     .join('');
 }
 
+function setupArcadeTabs() {
+  const tabBtns = document.querySelectorAll('.arcade-tab-btn[data-tab]');
+  const panels = document.querySelectorAll('.arcade-panel');
+
+  tabBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-tab');
+      tabBtns.forEach((b) => b.classList.remove('active'));
+      panels.forEach((p) => p.classList.remove('active'));
+
+      btn.classList.add('active');
+      const targetPanel = document.getElementById(targetId);
+      if (targetPanel) targetPanel.classList.add('active');
+    });
+  });
+}
+
 // Bootstrap
 document.addEventListener('DOMContentLoaded', () => {
   initParticlesCanvas('particle-canvas');
   initCyberTerminal('cyber-terminal');
+  initTicTacToe('tictactoe-container');
+  initSnakeGame('snake-game-container');
   initArcadeGame('arcade-game-container');
+  setupArcadeTabs();
   setupFilterEvents();
   renderSkillsMatrix();
   loadRepositories(false);

@@ -344,6 +344,227 @@
   gap: var(--space-3);
 }
 
+/* Arcade Games Hub Tabs & Panels */
+.arcade-tabs-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-5);
+  background: var(--slate-900);
+  border-bottom: 1px solid var(--border-subtle);
+  overflow-x: auto;
+}
+
+.arcade-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--duration-micro) var(--ease-enter);
+  white-space: nowrap;
+}
+
+.arcade-tab-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--border-accent);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.arcade-tab-btn.active {
+  background: linear-gradient(135deg, rgba(0, 242, 254, 0.15), rgba(139, 92, 246, 0.15));
+  border-color: var(--cyan-500);
+  color: #ffffff;
+  box-shadow: 0 0 16px rgba(0, 242, 254, 0.2);
+}
+
+.arcade-panel {
+  display: none;
+}
+
+.arcade-panel.active {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tic-Tac-Toe (X-O) Styles */
+.xo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-6) var(--space-4);
+  gap: var(--space-5);
+  background: radial-gradient(circle at center, rgba(15, 23, 42, 0.9), #05070d);
+}
+
+.xo-scoreboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+  width: 100%;
+  max-width: 380px;
+}
+
+.xo-score-tile {
+  background: var(--slate-850);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.xo-score-label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.xo-score-val {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.xo-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-2);
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1 / 1;
+  background: var(--slate-900);
+  padding: var(--space-2);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-strong);
+  box-shadow: var(--shadow-md), 0 0 24px rgba(0, 242, 254, 0.08);
+}
+
+.xo-cell {
+  background: var(--slate-850);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--duration-micro) var(--ease-enter);
+  user-select: none;
+  position: relative;
+}
+
+.xo-cell:hover:not(.cell-x):not(.cell-o) {
+  background: var(--slate-800);
+  border-color: var(--cyan-400);
+  transform: scale(0.97);
+}
+
+.xo-mark-svg {
+  width: 58%;
+  height: 58%;
+  transition: transform var(--duration-micro) var(--ease-enter);
+}
+
+.cell-x {
+  color: var(--cyan-400);
+}
+
+.cell-x .xo-mark-svg {
+  filter: drop-shadow(0 0 10px rgba(0, 242, 254, 0.6));
+}
+
+.cell-o {
+  color: var(--violet-400);
+}
+
+.cell-o .xo-mark-svg {
+  filter: drop-shadow(0 0 10px rgba(139, 92, 246, 0.6));
+}
+
+.cell-winning {
+  background: rgba(16, 185, 129, 0.2) !important;
+  border-color: #10b981 !important;
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+  animation: pulseDot 1s infinite alternate;
+}
+
+.xo-status-banner {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--cyan-300);
+  text-align: center;
+  min-height: 24px;
+}
+
+/* Classic Snake Styles */
+.snake-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-5) var(--space-4);
+  gap: var(--space-4);
+  background: #05070d;
+}
+
+.snake-canvas-box {
+  width: 100%;
+  max-width: 360px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#snake-canvas {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-strong);
+  box-shadow: var(--shadow-md);
+  display: block;
+}
+
+.snake-dpad {
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  grid-template-rows: repeat(3, 48px);
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--space-2);
+}
+
+.dpad-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: var(--slate-800);
+  border: 1px solid var(--border-strong);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--duration-micro) var(--ease-enter);
+}
+
+.dpad-btn:active {
+  background: var(--cyan-500);
+  color: #05070d;
+  transform: scale(0.92);
+}
+
 /* Cyber Terminal Window */
 .terminal-window {
   border-radius: var(--radius-lg);
