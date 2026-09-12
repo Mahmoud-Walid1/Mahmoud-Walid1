@@ -22,7 +22,7 @@ d:\downloads\MY portoflio/
 │   ├── bot-cyber.svg                   # Vector Cyber-Bot graphic
 │   ├── favicon.svg                     # Cyberpunk brand mark icon
 │   └── ventures/                       # Founded Ventures Media
-│       ├── akeel.gif                   # Akeel food tech platform preview (animated)
+│       ├── akeel.png                   # Akeel food tech platform brand logo
 │       └── tafra.png                   # Tafra technology acceleration platform logo
 │
 ├── css/                                # Modular Styling System

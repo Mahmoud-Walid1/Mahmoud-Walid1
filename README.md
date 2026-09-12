@@ -3,12 +3,12 @@
   
 
   # Mahmoud Walid
-  ### Founder of Tafra (طفره) &amp; Akeel (أكيل) &bull; AI-Native Systems Architect
+  ### Founder of Tafra &amp; Akeel &bull; AI-Native Systems Architect
 
   <p align="center">
     <a href="https://github.com/Mahmoud-Walid1"><img src="https://img.shields.io/badge/Status-Shipping_at_Warp_Speed-00f2fe?style=for-the-badge&logoColor=090d16" alt="Status" /></a>
     <a href="https://github.com/Mahmoud-Walid1?tab=repositories"><img src="https://img.shields.io/badge/Repositories-18_Active-8b5cf6?style=for-the-badge&logoColor=white" alt="Repos" /></a>
-    <a href="mailto:mahmoud.walid.dev@gmail.com"><img src="https://img.shields.io/badge/Contact-Direct_Message-10b981?style=for-the-badge&logoColor=white" alt="Contact" /></a>
+    <a href="mailto:mahmoud968542@gmail.com"><img src="https://img.shields.io/badge/Contact-Direct_Message-10b981?style=for-the-badge&logoColor=white" alt="Contact" /></a>
   </p>
 
   <p align="center">
@@ -16,7 +16,7 @@
   </p>
 
   <p align="center">
-    <a href="#ventures">Founded Ventures (طفره &amp; أكيل)</a> &bull;
+    <a href="#ventures">Founded Ventures (Akeel &amp; Tafra)</a> &bull;
     <a href="#about-me">About Me</a> &bull;
     <a href="#featured-systems">Featured Systems</a> &bull;
     <a href="#tech-stack">Tech Stack</a> &bull;
@@ -28,7 +28,7 @@
 ---
 
 <a id="ventures"></a>
-### Founded Ventures &bull; شركات ريادية (قيد الإنشاء)
+### Founded Ventures (Under Construction)
 
 <div align="center">
   <p><strong>Core technology platforms founded by Mahmoud Walid &mdash; in active stealth development.</strong></p>
@@ -36,8 +36,8 @@
 
 | Venture | Domain & Focus | Brand Preview | Status |
 | :--- | :--- | :---: | :--- |
-| **أكيل &bull; Akeel** | Next-generation food discovery, smart order routing & cloud restaurant ecosystem. | <img src="https://raw.githubusercontent.com/Mahmoud-Walid1/Mahmoud-Walid1/main/assets/ventures/akeel.gif" width="160" alt="Akeel" /> | ![Under Construction](https://img.shields.io/badge/Status-قيد_الإنشاء_/_In_Stealth-f59e0b?style=for-the-badge) |
-| **طفره &bull; Tafra** | Groundbreaking technology acceleration platform driving digital breakthroughs in regional services. | <img src="https://raw.githubusercontent.com/Mahmoud-Walid1/Mahmoud-Walid1/main/assets/ventures/tafra.png" width="160" alt="Tafra" /> | ![Under Construction](https://img.shields.io/badge/Status-قيد_الإنشاء_/_In_R%26D-f59e0b?style=for-the-badge) |
+| **Akeel** | Next-generation food discovery, smart order routing & cloud restaurant ecosystem. | <img src="https://raw.githubusercontent.com/Mahmoud-Walid1/Mahmoud-Walid1/main/assets/ventures/akeel.png" width="160" alt="Akeel" /> | ![Under Construction](https://img.shields.io/badge/Status-In_Stealth_/_Under_Construction-f59e0b?style=for-the-badge) |
+| **Tafra** | Groundbreaking technology acceleration platform driving digital breakthroughs in regional services. | <img src="https://raw.githubusercontent.com/Mahmoud-Walid1/Mahmoud-Walid1/main/assets/ventures/tafra.png" width="160" alt="Tafra" /> | ![Under Construction](https://img.shields.io/badge/Status-In_R%26D_/_Under_Construction-f59e0b?style=for-the-badge) |
 
 ---
 

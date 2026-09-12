@@ -14,7 +14,7 @@ export const CONFIG = {
     github: 'https://github.com/Mahmoud-Walid1',
     linkedin: 'https://linkedin.com/in/mahmoud-walid',
     twitter: 'https://x.com/MahmoudWalid',
-    email: 'mailto:mahmoud.walid.dev@gmail.com',
+    email: 'mailto:mahmoud968542@gmail.com',
   },
 
   skills: [
