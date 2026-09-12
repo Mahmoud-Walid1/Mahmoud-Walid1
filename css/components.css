@@ -1,0 +1,431 @@
+/**
+ * Component Styles
+ * Buttons, Badges, Cyber Terminal, Repository Cards, and Skeleton Loaders.
+ */
+
+/* Badges */
+.badge-vibe {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  background: rgba(0, 242, 254, 0.08);
+  border: 1px solid var(--border-accent);
+  color: var(--cyan-300);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  width: fit-content;
+  box-shadow: 0 0 16px rgba(0, 242, 254, 0.15);
+}
+
+.badge-pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--cyan-500);
+  box-shadow: 0 0 8px var(--cyan-500);
+  animation: pulseDot 2s infinite;
+}
+
+@keyframes pulseDot {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.3); opacity: 0.6; }
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  height: 44px;
+  padding: 0 var(--space-5);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--duration-standard) var(--ease-enter);
+  border: 1px solid transparent;
+  user-select: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--cyan-500), var(--violet-600));
+  color: #05070d;
+  box-shadow: var(--shadow-neon-cyan);
+}
+
+.btn-primary:hover {
+  filter: brightness(1.15);
+  box-shadow: 0 0 28px rgba(0, 242, 254, 0.4);
+}
+
+.btn-secondary {
+  background: var(--slate-850);
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+}
+
+.btn-secondary:hover {
+  background: var(--slate-800);
+  border-color: var(--border-accent);
+  color: var(--text-accent);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-secondary);
+}
+
+.btn-ghost:hover {
+  background: var(--slate-850);
+  color: var(--text-primary);
+}
+
+.btn-icon {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: var(--radius-md);
+  background: var(--slate-850);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--duration-micro) var(--ease-enter);
+}
+
+.btn-icon:hover {
+  color: var(--text-accent);
+  border-color: var(--border-accent);
+  transform: translateY(-2px);
+}
+
+/* Cyber Terminal Window */
+.terminal-window {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-strong);
+  background: rgba(9, 13, 22, 0.9);
+  backdrop-filter: blur(20px);
+  box-shadow: var(--shadow-lg), 0 0 32px rgba(139, 92, 246, 0.12);
+  overflow: hidden;
+  font-family: var(--font-mono);
+}
+
+.terminal-header {
+  height: 40px;
+  background: var(--slate-850);
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-4);
+}
+
+.terminal-dots {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.terminal-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot-red { background: #ef4444; }
+.dot-yellow { background: #f59e0b; }
+.dot-green { background: #10b981; }
+
+.terminal-title {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.terminal-body {
+  padding: var(--space-5);
+  height: 280px;
+  overflow-y: auto;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+.terminal-line {
+  margin-bottom: var(--space-2);
+}
+
+.terminal-prompt {
+  color: var(--cyan-400);
+  font-weight: 600;
+}
+
+.terminal-system {
+  color: var(--text-muted);
+}
+
+.terminal-output {
+  color: var(--slate-200);
+}
+
+.terminal-highlight {
+  color: var(--violet-400);
+}
+
+.terminal-input-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.terminal-input {
+  background: transparent;
+  border: none;
+  color: var(--cyan-300);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  outline: none;
+  flex: 1;
+}
+
+/* Controls Bar (Search & Filters) */
+.controls-bar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+@media (min-width: 768px) {
+  .controls-bar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+}
+
+.search-icon {
+  position: absolute;
+  left: var(--space-3);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  height: 42px;
+  background: var(--slate-900);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding-left: var(--space-9);
+  padding-right: var(--space-4);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  outline: none;
+  transition: all var(--duration-micro) var(--ease-enter);
+}
+
+.search-input:focus {
+  border-color: var(--cyan-500);
+  box-shadow: 0 0 16px rgba(0, 242, 254, 0.2);
+}
+
+.filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.filter-chip {
+  padding: var(--space-1) var(--space-3);
+  background: var(--slate-850);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--duration-micro) var(--ease-enter);
+}
+
+.filter-chip:hover {
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+}
+
+.filter-chip.active {
+  background: rgba(0, 242, 254, 0.12);
+  border-color: var(--cyan-500);
+  color: var(--cyan-300);
+}
+
+/* Repository Card */
+.repo-card {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface-glass);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-4);
+  transition: all var(--duration-standard) var(--ease-enter);
+  position: relative;
+  overflow: hidden;
+}
+
+.repo-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--cyan-500), transparent);
+  opacity: 0;
+  transition: opacity var(--duration-standard) var(--ease-enter);
+}
+
+.repo-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-accent);
+  box-shadow: var(--shadow-md), 0 0 24px rgba(0, 242, 254, 0.1);
+}
+
+.repo-card:hover::before {
+  opacity: 1;
+}
+
+.repo-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.repo-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-decoration: none;
+  word-break: break-word;
+  transition: color var(--duration-micro) var(--ease-enter);
+}
+
+.repo-name:hover {
+  color: var(--text-accent);
+}
+
+.repo-desc {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.repo-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-subtle);
+  padding-top: var(--space-3);
+}
+
+.repo-stats {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.repo-stat {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.repo-lang-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-sm);
+  background: var(--slate-800);
+  color: var(--slate-300);
+  font-size: 0.6875rem;
+  font-weight: 600;
+}
+
+.repo-lang-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.repo-demo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  color: var(--cyan-400);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color var(--duration-micro) var(--ease-enter);
+}
+
+.repo-demo-link:hover {
+  color: #ffffff;
+}
+
+/* Skeleton Loader (Doherty Threshold Mirror) */
+.skeleton-card {
+  height: 180px;
+  border-radius: var(--radius-lg);
+  background: var(--slate-900);
+  border: 1px solid var(--border-subtle);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton-shimmer {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.04), transparent);
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.skeleton-line {
+  height: 12px;
+  background: var(--slate-800);
+  border-radius: var(--radius-sm);
+}
