@@ -2,7 +2,7 @@
 
   <!-- Animated Cyber-Bot Character -->
   <a href="https://github.com/Mahmoud-Walid1">
-    <img src="assets/bot-cyber.svg" width="220" alt="Cyber-Bot Assistant" />
+    <img src="https://raw.githubusercontent.com/Mahmoud-Walid1/Mahmoud-Walid1/main/assets/bot-cyber.svg" width="220" alt="Cyber-Bot Assistant" />
   </a>
 
   # Mahmoud Walid
