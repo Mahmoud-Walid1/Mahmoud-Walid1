@@ -1,9 +1,6 @@
 <div align="center">
 
-  <!-- Animated Cyber-Bot Character -->
-  <a href="https://github.com/Mahmoud-Walid1">
-    <img src="https://raw.githubusercontent.com/Mahmoud-Walid1/Mahmoud-Walid1/main/assets/bot-cyber.svg" width="220" alt="Cyber-Bot Assistant" />
-  </a>
+  
 
   # Mahmoud Walid
   ### ⚡ Vibe Coder &bull; AI-Native Engineer &bull; Fullstack Systems Builder
@@ -19,16 +16,17 @@
   </p>
 
   <p align="center">
-    <a href="#-about-me">About Me</a> &bull;
-    <a href="#-featured-systems">Featured Systems</a> &bull;
-    <a href="#-tech-stack--superpowers">Tech Stack</a> &bull;
-    <a href="#-github-telemetry">Telemetry</a>
+    <a href="#about-me">About Me</a> &bull;
+    <a href="#featured-systems">Featured Systems</a> &bull;
+    <a href="#tech-stack">Tech Stack</a> &bull;
+    <a href="#telemetry">Telemetry</a>
   </p>
 
 </div>
 
 ---
 
+<a id="about-me"></a>
 ### 🛸 About Me
 
 - 🧠 **AI-Native Engineering**: I orchestrate AI agents (Antigravity, Cursor, Claude Code) to build production-grade web applications and machine learning platforms in record time.
@@ -38,6 +36,7 @@
 
 ---
 
+<a id="featured-systems"></a>
 ### ⚡ Featured Systems & Live Applications
 
 | Project | Domain / Tech | Description | Status / Demo |
@@ -50,6 +49,7 @@
 
 ---
 
+<a id="tech-stack"></a>
 ### 🛠️ Tech Stack & Superpowers
 
 <div align="center">
@@ -76,6 +76,7 @@
 
 ---
 
+<a id="telemetry"></a>
 ### 📊 GitHub Telemetry & Stats
 
 ---
