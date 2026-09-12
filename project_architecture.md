@@ -16,20 +16,24 @@ d:\downloads\MY portoflio/
 │
 ├── project_architecture.md             # Continuous context index & file mapping
 ├── index.html                          # Semantic single-page application & canvas root
-├── README.md                           # GitHub profile README with animated Cyber-Bot
+├── README.md                           # GitHub profile README with live telemetry & ventures
 │
-├── assets/                             # Visual Vector Assets (Zero-Emoji Standard)
-│   ├── bot-cyber.svg                   # Animated Vector Cyber-Bot Character
-│   └── favicon.svg                     # Cyberpunk brand mark icon
+├── assets/                             # Visual Vector & Brand Assets (Zero-Emoji Standard)
+│   ├── bot-cyber.svg                   # Vector Cyber-Bot graphic
+│   ├── favicon.svg                     # Cyberpunk brand mark icon
+│   └── ventures/                       # Founded Ventures Media
+│       ├── akeel.gif                   # Akeel food tech platform preview (animated)
+│       └── tafra.png                   # Tafra technology acceleration platform logo
 │
 ├── css/                                # Modular Styling System
 │   ├── tokens.css                      # Design tokens (4px scale, 100-900 ramps, easing, fonts)
-│   ├── layout.css                      # Grid container, hero, terminal, projects grid & footer
-│   └── components.css                  # Cards, buttons, badges, chips, and skeleton loaders
+│   ├── layout.css                      # Grid container, hero console, terminal, projects grid & footer
+│   └── components.css                  # Cards, buttons, badges, arcade container, ventures, skeletons
 │
 └── js/                                 # Modular Logic (Clean Architecture ES6)
     ├── config.js                       # Social links, profile metadata & terminal dictionary
     ├── particles.js                    # Interactive cyber grid canvas background (60fps)
+    ├── game.js                         # Cyber Dash: Bug Dodger 2D canvas arcade engine & Web Audio
     ├── github.js                       # GitHub REST API client with localStorage TTL caching
     ├── terminal.js                     # Interactive cyber terminal prompt emulator
     ├── ui.js                           # DOM renderer, search debouncing & filter chips
@@ -43,11 +47,12 @@ d:\downloads\MY portoflio/
 | File | Primary Responsibility | Key Interfaces / Exports |
 | :--- | :--- | :--- |
 | `css/tokens.css` | Color ramps, spacing scale, typographic hierarchy, elevation | CSS variables (`:root`) |
-| `css/layout.css` | Page sections, flex/grid alignment, responsive breakpoints | Layout classes |
-| `css/components.css` | Component styling (buttons, project cards, terminal window) | Component classes |
+| `css/layout.css` | Page sections, hero telemetry console, flex/grid alignment, responsive | Layout classes |
+| `css/components.css` | Component styling (buttons, venture cards, arcade container, terminal) | Component classes |
 | `js/config.js` | User configuration, terminal command responses, links | `CONFIG` object |
 | `js/particles.js` | Canvas initialization, 2D particle simulation, mouse interaction | `initParticlesCanvas()` |
+| `js/game.js` | 2D Canvas runner game engine, collision physics, synth sound, high scores | `initArcadeGame()` |
 | `js/github.js` | Fetching repos, caching with 45m TTL, parsing demo links | `fetchUserRepositories()` |
 | `js/terminal.js` | Parsing terminal commands, auto-typing, terminal history | `initCyberTerminal()` |
 | `js/ui.js` | Rendering repo cards, search debouncing (200ms), topic pills | `renderRepositories()`, `setupFilters()` |
-| `js/main.js` | Initializing modules and connecting UI events | DOMContentLoaded listener |
+| `js/main.js` | Initializing modules (particles, terminal, game, github sync) | DOMContentLoaded listener |

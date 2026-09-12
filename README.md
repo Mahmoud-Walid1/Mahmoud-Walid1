@@ -3,7 +3,7 @@
   
 
   # Mahmoud Walid
-  ### ⚡ Vibe Coder &bull; AI-Native Engineer &bull; Fullstack Systems Builder
+  ### Founder of Tafra (طفره) &amp; Akeel (أكيل) &bull; AI-Native Systems Architect
 
   <p align="center">
     <a href="https://github.com/Mahmoud-Walid1"><img src="https://img.shields.io/badge/Status-Shipping_at_Warp_Speed-00f2fe?style=for-the-badge&logoColor=090d16" alt="Status" /></a>
@@ -16,6 +16,7 @@
   </p>
 
   <p align="center">
+    <a href="#ventures">Founded Ventures (طفره &amp; أكيل)</a> &bull;
     <a href="#about-me">About Me</a> &bull;
     <a href="#featured-systems">Featured Systems</a> &bull;
     <a href="#tech-stack">Tech Stack</a> &bull;
@@ -26,22 +27,36 @@
 
 ---
 
-<a id="about-me"></a>
-### 🛸 About Me
+<a id="ventures"></a>
+### Founded Ventures &bull; شركات ريادية (قيد الإنشاء)
 
-- 🧠 **AI-Native Engineering**: I orchestrate AI agents (Antigravity, Cursor, Claude Code) to build production-grade web applications and machine learning platforms in record time.
-- 📐 **Architecture Rigor**: Fast execution doesn't mean sloppy code. I adhere strictly to **Clean Architecture**, systematic design tokens, 4px modular scales, and the **Doherty Threshold (<400ms)** for instantaneous user perception.
-- 👁️ **Computer Vision & ML**: Experienced in computer vision systems (facial detection, recognition networks, automation pipelines) and real-time edge processing.
-- 🚀 **Portfolio Web**: Live interactive portfolio with dynamic GitHub REST sync and a playable Cyber Terminal emulator.
+<div align="center">
+  <p><strong>Core technology platforms founded by Mahmoud Walid &mdash; in active stealth development.</strong></p>
+</div>
+
+| Venture | Domain & Focus | Brand Preview | Status |
+| :--- | :--- | :---: | :--- |
+| **أكيل &bull; Akeel** | Next-generation food discovery, smart order routing & cloud restaurant ecosystem. | <img src="https://raw.githubusercontent.com/Mahmoud-Walid1/Mahmoud-Walid1/main/assets/ventures/akeel.gif" width="160" alt="Akeel" /> | ![Under Construction](https://img.shields.io/badge/Status-قيد_الإنشاء_/_In_Stealth-f59e0b?style=for-the-badge) |
+| **طفره &bull; Tafra** | Groundbreaking technology acceleration platform driving digital breakthroughs in regional services. | <img src="https://raw.githubusercontent.com/Mahmoud-Walid1/Mahmoud-Walid1/main/assets/ventures/tafra.png" width="160" alt="Tafra" /> | ![Under Construction](https://img.shields.io/badge/Status-قيد_الإنشاء_/_In_R%26D-f59e0b?style=for-the-badge) |
+
+---
+
+<a id="about-me"></a>
+### About Me &bull; نبذة عن المسار الهندسي
+
+- **AI-Native Engineering**: I orchestrate AI agents (Antigravity, Cursor, Claude Code) to build production-grade web applications and machine learning platforms in record time.
+- **Architecture Rigor**: Fast execution doesn't mean sloppy code. I adhere strictly to **Clean Architecture**, systematic design tokens, 4px modular scales, and the **Doherty Threshold (<400ms)** for instantaneous user perception.
+- **Computer Vision & ML**: Experienced in computer vision systems (facial detection, recognition networks, automation pipelines) and real-time edge processing.
+- **Portfolio Web**: Live interactive portfolio with dynamic GitHub REST sync and an arcade mini-game engine.
 
 ---
 
 <a id="featured-systems"></a>
-### ⚡ Featured Systems & Live Applications
+### Featured Systems & Live Applications
 
 | Project | Domain / Tech | Description | Status / Demo |
 | :--- | :--- | :--- | :--- |
-| **[DEPI Face Recognition](https://github.com/Mahmoud-Walid1/DEPI-face-recognition-project)** | `Python` &bull; `OpenCV` &bull; `ML` | Machine learning face detection & identification system for Digital Egypt Pioneers Initiative. | ![Star](https://img.shields.io/badge/Stars-1_⭐-f59e0b?style=flat-square) |
+| **[DEPI Face Recognition](https://github.com/Mahmoud-Walid1/DEPI-face-recognition-project)** | `Python` &bull; `OpenCV` &bull; `ML` | Machine learning face detection & identification system for Digital Egypt Pioneers Initiative. | ![Star](https://img.shields.io/badge/Stars-1-f59e0b?style=flat-square) |
 | **[InterActive Lessons](https://github.com/Mahmoud-Walid1/InterActive_lessons-test)** | `React` &bull; `Python` &bull; `Vercel` | High-engagement interactive learning platform with real-time feedback loops. | [Live Demo](https://inter-active-lessons-test.vercel.app) |
 | **[Tikka Plate Platform](https://github.com/Mahmoud-Walid1/Tikka_plate)** | `JavaScript` &bull; `HTML/CSS` | Responsive food ordering and menu management client portal. | [Live Demo](https://tikka-plate.vercel.app) |
 | **[Tikka Plate Admin](https://github.com/Mahmoud-Walid1/Tikka_plate_admin)** | `JavaScript` &bull; `Admin UI` | Administrative operations panel with inventory and order tracking workflows. | [Live Demo](https://tikka-plate-admin.vercel.app) |
@@ -50,7 +65,7 @@
 ---
 
 <a id="tech-stack"></a>
-### 🛠️ Tech Stack & Superpowers
+### Tech Stack & Core Competencies
 
 <div align="center">
 
@@ -77,11 +92,11 @@
 ---
 
 <a id="telemetry"></a>
-### 📊 GitHub Telemetry & Stats
+### GitHub Telemetry & Stats
 
 ---
 
-### 🐍 Contribution Activity Snake
+### Contribution Activity Snake
 
 <div align="center">
   <picture>

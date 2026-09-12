@@ -5,6 +5,7 @@
 
 import { initParticlesCanvas } from './particles.js';
 import { initCyberTerminal } from './terminal.js';
+import { initArcadeGame } from './game.js';
 import { fetchUserRepositories } from './github.js';
 import { renderRepositories, renderSkeletons, debounce } from './ui.js';
 import { CONFIG } from './config.js';
@@ -143,6 +144,7 @@ function renderSkillsMatrix() {
 document.addEventListener('DOMContentLoaded', () => {
   initParticlesCanvas('particle-canvas');
   initCyberTerminal('cyber-terminal');
+  initArcadeGame('arcade-game-container');
   setupFilterEvents();
   renderSkillsMatrix();
   loadRepositories(false);

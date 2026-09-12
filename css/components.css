@@ -1,6 +1,6 @@
 /**
  * Component Styles
- * Buttons, Badges, Cyber Terminal, Repository Cards, and Skeleton Loaders.
+ * Buttons, Badges, Cyber Terminal, Repository Cards, Arcade Mini-Game, Ventures, and Skeletons.
  */
 
 /* Badges */
@@ -26,6 +26,29 @@
   background: var(--cyan-500);
   box-shadow: 0 0 8px var(--cyan-500);
   animation: pulseDot 2s infinite;
+}
+
+.badge-construction {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 4px var(--space-3);
+  border-radius: var(--radius-full);
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: #fbbf24;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: var(--font-mono);
+}
+
+.badge-pulse-amber {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #f59e0b;
+  box-shadow: 0 0 8px #f59e0b;
+  animation: pulseDot 1.8s infinite;
 }
 
 @keyframes pulseDot {
@@ -106,6 +129,219 @@
   color: var(--text-accent);
   border-color: var(--border-accent);
   transform: translateY(-2px);
+}
+
+/* Founded Ventures Cards */
+.ventures-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+@media (min-width: 840px) {
+  .ventures-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.venture-card {
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-strong);
+  background: var(--bg-surface-glass);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-5);
+  transition: all var(--duration-standard) var(--ease-enter);
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.venture-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--cyan-500), var(--violet-500));
+  opacity: 0.8;
+}
+
+.venture-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-accent);
+  box-shadow: var(--shadow-lg), 0 0 32px rgba(0, 242, 254, 0.15);
+}
+
+/* Concentric Border Radii for Inner Media: R_inner = R_outer - Padding = 24px - 8px = 16px */
+.venture-media-wrapper {
+  width: 100%;
+  height: 240px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  background: #060912;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.venture-media-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--duration-surface) var(--ease-enter);
+}
+
+.venture-card:hover .venture-media-wrapper img {
+  transform: scale(1.04);
+}
+
+.venture-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.venture-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.venture-name {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+.venture-role {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--cyan-400);
+  font-weight: 600;
+}
+
+.venture-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.venture-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.venture-tag {
+  padding: 3px 8px;
+  background: var(--slate-800);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  font-size: 0.6875rem;
+  font-family: var(--font-mono);
+  color: var(--slate-300);
+}
+
+/* Arcade Mini-Game Container */
+.arcade-container {
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-strong);
+  background: rgba(9, 13, 22, 0.95);
+  backdrop-filter: blur(24px);
+  box-shadow: var(--shadow-lg), 0 0 36px rgba(0, 242, 254, 0.12);
+  overflow: hidden;
+  position: relative;
+}
+
+.arcade-header {
+  height: 52px;
+  background: var(--slate-850);
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-5);
+  flex-wrap: wrap;
+}
+
+.arcade-title-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.arcade-status-badge {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  background: rgba(0, 242, 254, 0.15);
+  color: var(--cyan-400);
+  border: 1px solid var(--border-accent);
+}
+
+.arcade-stats {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+}
+
+.arcade-stat-item {
+  color: var(--slate-400);
+}
+
+.arcade-stat-val {
+  color: var(--cyan-300);
+  font-weight: 700;
+}
+
+.arcade-canvas-wrapper {
+  width: 100%;
+  position: relative;
+  background: #05070d;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#cyber-game-canvas {
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+  aspect-ratio: 680 / 240;
+  display: block;
+  cursor: pointer;
+}
+
+.arcade-footer-controls {
+  padding: var(--space-4) var(--space-5);
+  background: var(--slate-900);
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.arcade-btn-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
 }
 
 /* Cyber Terminal Window */
