@@ -29,7 +29,7 @@ export const CONFIG = {
     help: `Available commands:
   - <span class="terminal-highlight">vibe</span>      : What is a Vibe Coder & my philosophy
   - <span class="terminal-highlight">skills</span>    : Display active engineering tech stack
-  - <span class="terminal-highlight">projects</span>  : List top repositories & live demos
+  - <span class="terminal-highlight">projects</span>  : List top repositories & systems
   - <span class="terminal-highlight">contact</span>   : Display social & communication links
   - <span class="terminal-highlight">clear</span>     : Clear the terminal screen
   - <span class="terminal-highlight">matrix</span>    : Trigger cyber rain effect
@@ -49,7 +49,7 @@ delivering production products 10x faster with 0 compromise on quality.`,
 
     contact: `<span class="terminal-prompt">> COMM CHANNELS:</span>
 * GitHub   : https://github.com/Mahmoud-Walid1
-* Email    : mahmoud.walid.dev@gmail.com
+* Email    : mahmoud968542@gmail.com
 * Status   : Open for high-impact engineering collaborations`,
 
     bot: `<span class="terminal-highlight">[Cyber-Bot v2.4 Online]:</span>
