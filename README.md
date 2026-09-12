@@ -78,10 +78,23 @@
 
 ### 📊 GitHub Telemetry & Stats
 
+---
+
+### 🐍 Contribution Activity Snake
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mahmoud-Walid1/Mahmoud-Walid1/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mahmoud-Walid1/Mahmoud-Walid1/output/github-contribution-grid-snake.svg">
+    <img alt="GitHub Contribution Snake Animation" src="https://raw.githubusercontent.com/Mahmoud-Walid1/Mahmoud-Walid1/output/github-contribution-grid-snake-dark.svg" width="100%" />
+  </picture>
+</div>
+
+
 <div align="center">
 
-  <img src="https://github-readme-stats.vercel.app/api?username=Mahmoud-Walid1&show_icons=true&theme=tokyonight&hide_border=true&bg_color=090d16&title_color=00f2fe&text_color=cbd5e1&icon_color=8b5cf6" alt="GitHub Stats" width="49%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mahmoud-Walid1&layout=compact&theme=tokyonight&hide_border=true&bg_color=090d16&title_color=00f2fe&text_color=cbd5e1" alt="Top Languages" width="45%" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=Mahmoud-Walid1&show_icons=true&theme=tokyonight&hide_border=true&bg_color=090d16&title_color=00f2fe&text_color=cbd5e1&icon_color=8b5cf6" alt="GitHub Stats" width="49%" />
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Mahmoud-Walid1&layout=compact&theme=tokyonight&hide_border=true&bg_color=090d16&title_color=00f2fe&text_color=cbd5e1" alt="Top Languages" width="45%" />
 
   <br />
 
