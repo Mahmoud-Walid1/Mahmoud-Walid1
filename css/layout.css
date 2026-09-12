@@ -331,7 +331,7 @@ body {
 
 .dev-quick-links {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-2);
 }
 
@@ -339,15 +339,15 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  height: 36px;
-  padding: 0 var(--space-2);
+  gap: var(--space-2);
+  height: 38px;
+  padding: 0 var(--space-3);
   border-radius: var(--radius-md);
   background: var(--slate-850);
   border: 1px solid var(--border-subtle);
   color: var(--text-secondary);
   font-family: var(--font-sans);
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 600;
   text-decoration: none;
   transition: all var(--duration-micro) var(--ease-enter);
@@ -360,17 +360,42 @@ body {
   transform: translateY(-1px);
 }
 
+.dev-link-btn[title="GitHub"]:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+}
+
+.dev-link-btn[title="LinkedIn"]:hover {
+  border-color: rgba(10, 102, 194, 0.5);
+  color: #60a5fa;
+  box-shadow: 0 0 12px rgba(10, 102, 194, 0.18);
+}
+
+.dev-link-btn[title="WhatsApp"]:hover {
+  border-color: rgba(37, 211, 102, 0.5);
+  color: #4ade80;
+  box-shadow: 0 0 12px rgba(37, 211, 102, 0.18);
+}
+
+.dev-link-btn[title="Facebook"]:hover {
+  border-color: rgba(24, 119, 242, 0.5);
+  color: #60a5fa;
+  box-shadow: 0 0 12px rgba(24, 119, 242, 0.18);
+}
+
 .dev-link-btn.highlight {
   grid-column: 1 / -1;
+  height: 42px;
   background: linear-gradient(135deg, rgba(0, 242, 254, 0.12), rgba(139, 92, 246, 0.12));
   border-color: rgba(0, 242, 254, 0.35);
   color: var(--cyan-300);
+  font-size: 0.8125rem;
 }
 
 .dev-link-btn.highlight:hover {
   border-color: var(--cyan-400);
   background: linear-gradient(135deg, rgba(0, 242, 254, 0.2), rgba(139, 92, 246, 0.2));
-  box-shadow: 0 0 16px rgba(0, 242, 254, 0.2);
+  box-shadow: 0 0 16px rgba(0, 242, 254, 0.25);
 }
 
 /* Section Common Layout */
