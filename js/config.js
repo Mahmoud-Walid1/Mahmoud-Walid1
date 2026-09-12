@@ -12,9 +12,11 @@ export const CONFIG = {
 
   socials: {
     github: 'https://github.com/Mahmoud-Walid1',
-    linkedin: 'https://linkedin.com/in/mahmoud-walid',
-    twitter: 'https://x.com/MahmoudWalid',
-    email: 'mailto:mahmoud968542@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/mahmoud-walid-/',
+    facebook: 'https://www.facebook.com/MaHmOuD.WaliD.Abd.elkhalek/',
+    whatsapp: 'https://wa.me/201207384245',
+    phone: '+201207384245',
+    email: 'mahmoud968542@gmail.com',
   },
 
   skills: [
@@ -47,10 +49,14 @@ delivering production products 10x faster with 0 compromise on quality.`,
 * Data & Vision    : Python, Computer Vision (DEPI Face Rec), OpenCV
 * Philosophy       : Doherty Threshold (<400ms), Clean Architecture, Zero-Emoji UX`,
 
-    contact: `<span class="terminal-prompt">> COMM CHANNELS:</span>
+    contact: `<span class="terminal-prompt">> DIRECT COMMUNICATION CHANNELS:</span>
+* LinkedIn : https://www.linkedin.com/in/mahmoud-walid-/
+* WhatsApp : https://wa.me/201207384245 (+20 120 738 4245)
+* Facebook : https://www.facebook.com/MaHmOuD.WaliD.Abd.elkhalek/
 * GitHub   : https://github.com/Mahmoud-Walid1
 * Email    : mahmoud968542@gmail.com
-* Status   : Open for high-impact engineering collaborations`,
+* Location : Cairo, Egypt (GMT+2)
+* Status   : Open for high-impact engineering collaborations & ventures`,
 
     bot: `<span class="terminal-highlight">[Cyber-Bot v2.4 Online]:</span>
 "Beep boop! Systems calibrated, 18 GitHub repositories indexed.

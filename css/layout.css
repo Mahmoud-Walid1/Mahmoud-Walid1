@@ -331,7 +331,7 @@ body {
 
 .dev-quick-links {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--space-2);
 }
 
@@ -339,7 +339,7 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: var(--space-1);
+  gap: 6px;
   height: 36px;
   padding: 0 var(--space-2);
   border-radius: var(--radius-md);
@@ -361,13 +361,15 @@ body {
 }
 
 .dev-link-btn.highlight {
+  grid-column: 1 / -1;
   background: linear-gradient(135deg, rgba(0, 242, 254, 0.12), rgba(139, 92, 246, 0.12));
-  border-color: rgba(0, 242, 254, 0.3);
+  border-color: rgba(0, 242, 254, 0.35);
   color: var(--cyan-300);
 }
 
 .dev-link-btn.highlight:hover {
   border-color: var(--cyan-400);
+  background: linear-gradient(135deg, rgba(0, 242, 254, 0.2), rgba(139, 92, 246, 0.2));
   box-shadow: 0 0 16px rgba(0, 242, 254, 0.2);
 }
 
